@@ -6,5 +6,8 @@ class RandomChomskyGenerator < Sinatra::Base
     erb :home
   end
 
+  get '/sentence' do
+    erb :sentence
+  end
 
 end
