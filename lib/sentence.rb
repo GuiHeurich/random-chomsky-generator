@@ -1,6 +1,12 @@
 class Sentence
 
+  def self.instance(adjective, noun_phrase, verbal_phrase)
+    @adjective = adjective
+    @noun_phrase = noun_phrase
+    @verbal_phrase = verbal_phrase
+  end
+
   def self.generate
-    "Colorless green ideas sleep furiously"
+    "#{@adjective} #{@noun_phrase} #{@verbal_phrase}"
   end
 end
