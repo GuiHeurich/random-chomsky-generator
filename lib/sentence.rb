@@ -1,12 +1,9 @@
+require_relative 'noun_phrase'
+require_relative 'adjective'
+
 class Sentence
 
-  def self.instance(adjective, noun_phrase, verbal_phrase)
-    @adjective = adjective
-    @noun_phrase = noun_phrase
-    @verbal_phrase = verbal_phrase
-  end
-
-  def self.generate
-    "#{@adjective} #{@noun_phrase} #{@verbal_phrase}"
+  def self.generate(adjective = Adjective.generate, noun_phrase = NounPhrase.generate(adjective, noun), verbal_phrase)
+    "#{adjective} #{noun_phrase} #{verbal_phrase}"
   end
 end
