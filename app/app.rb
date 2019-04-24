@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/sentence'
 
 class RandomChomskyGenerator < Sinatra::Base
 
@@ -7,6 +8,7 @@ class RandomChomskyGenerator < Sinatra::Base
   end
 
   get '/sentence' do
+    @random_sentence = Sentence.generate
     erb :sentence
   end
 
