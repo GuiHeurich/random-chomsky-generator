@@ -2,9 +2,8 @@ require 'adjective'
 
 RSpec.describe Adjective do
   describe '#generate' do
-    it "generates a random adjective" do
-      allow(Adjective).to receive(:generate) { "Colorless" }
-      expect(Adjective.generate).to eq "Colorless"
+    it "generates an adjective" do
+      expect(Adjective).to respond_to(:generate)
     end
   end
 end
