@@ -1,5 +1,6 @@
 require_relative 'noun_phrase'
 require_relative 'adjective'
+require_relative 'verbal_phrase'
 
 class Sentence
 

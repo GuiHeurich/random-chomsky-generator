@@ -8,7 +8,7 @@ class RandomChomskyGenerator < Sinatra::Base
   end
 
   get '/sentence' do
-    @random_sentence = Sentence.generate(Adjective.generate, noun_phrase = NounPhrase.generate, "sleep furiously")
+    @random_sentence = Sentence.generate(Adjective.generate, NounPhrase.generate, VerbalPhrase.generate)
     erb :sentence
   end
 
