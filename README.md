@@ -4,6 +4,12 @@ Have you ever woken up to the feeling 'I need to read a meaningless random sente
 
 Well, of course not. BUT NOW YOU CAN! :)
 
+## How to use
+
+Clone the repo and run ```bundle install``` in the terminal. Type ```rackup``` in terminal and then go to the designated port in your browser by typing ```localhost:<port>```.
+
+Have fun!
+
 ### System
 
 Developed in Ruby using Sinatra and Capybara.
