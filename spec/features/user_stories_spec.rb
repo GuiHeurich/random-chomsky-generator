@@ -5,7 +5,8 @@
 feature 'Random Chomsky Generator' do
   scenario "shows a random sentence" do
       visit('/')
-      click_button 'Sleepless random chomsky generates furiously'
-      expect(page).to have_content ""
+      click_button 'Shadowless grammatical chomsky generates randomly'
+      click_button 'Again'
+      expect(page).to have_content "Click Me"
     end
   end
